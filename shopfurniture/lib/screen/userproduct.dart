@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shopfurniture/provider/produits.dart';
 import 'package:shopfurniture/screen/editscreen.dart';
+import 'package:shopfurniture/screen/formulaire.dart';
 import 'package:shopfurniture/widgets/appdrawer.dart';
 import 'package:shopfurniture/widgets/userproduit.dart';
 class UQserProductScrenn extends StatelessWidget {
@@ -17,7 +18,7 @@ class UQserProductScrenn extends StatelessWidget {
         title: const Text('les produits'),
         actions: [
           IconButton(onPressed: (){
-            Navigator.of(context).pushNamed(EditProductScreen.routeName);
+            Navigator.of(context).pushNamed(Formulaire.routeName);
           }, icon: (const Icon(Icons.add)))
         ],
       ),

@@ -7,6 +7,7 @@ import 'package:shopfurniture/provider/produits.dart';
 import 'package:shopfurniture/provider/provider.dart';
 import 'package:shopfurniture/screen/catscrre.dart';
 import 'package:shopfurniture/screen/editscreen.dart';
+import 'package:shopfurniture/screen/formulaire.dart';
 import 'package:shopfurniture/screen/oderscrre.dart';
 import 'package:shopfurniture/screen/screen.dart';
 import 'package:provider/provider.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
-        ),
+        ),  
        // home: const MyHomePage(),
         initialRoute:'/' ,
         routes: {
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
            OrderScreen.routName:(ctx)=>const OrderScreen (),
            UQserProductScrenn.routeName:(ctx)=>const UQserProductScrenn (),
            EditProductScreen.routeName:(ctx)=> const EditProductScreen(),
+           Formulaire.routeName:(ctx)=> const Formulaire(),
           
         },
         debugShowCheckedModeBanner: false

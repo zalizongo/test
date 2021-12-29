@@ -11,7 +11,6 @@ class EditProductScreen extends StatefulWidget {
   @override
   _EditProductScreenState createState() => _EditProductScreenState();
 }
-
 class _EditProductScreenState extends State<EditProductScreen> {
   final _priceFocunode = FocusNode();
   final _descriptionFocunode = FocusNode();
@@ -61,7 +60,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
    }
     _form.currentState!.save();
    // Provider.of(context)<ProduitsProvider>(context,listen:false).; 
-   Provider.of<ProduitsProvider>(context,listen: false).addproduit( _editdProduct);
+   //Provider.of<ProduitsProvider>(context,listen: false).addproduit( _editdProduct);
    Navigator.of(context).pop();
   }
   @override

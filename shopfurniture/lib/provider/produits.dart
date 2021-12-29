@@ -50,7 +50,7 @@ class ProduitsProvider with ChangeNotifier {
       ),
   ];
    List<Product> get items => [..._items ];
-  void addproduit(Product product){
+  void addProduit(Product product){
     final newproduit = Product(
       title: product.title,
       descriptions: product.descriptions,
